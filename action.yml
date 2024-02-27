@@ -1,0 +1,19 @@
+# @format
+
+# action.yml
+name: "Git Log"
+description: "Github Action to retrive last commit"
+author: FarBreaker <cianilorenzo3@gmail.com>
+branding:
+  icon: terminal
+  color: pink
+# inputs:
+# args:
+# description: "K"
+# required: false
+# default: "version"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.args }}
