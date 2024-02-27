@@ -6,4 +6,4 @@ COPY entrypoint.sh /entrypoint.sh
 RUN apk update && apk add git
 RUN chmod +x /entrypoint.sh && ls -al
 
-CMD ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
